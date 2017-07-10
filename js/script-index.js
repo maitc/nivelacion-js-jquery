@@ -10,7 +10,6 @@ $(document).ready( function(){
 		$(".new-callout").append("NUEVAS TAREAS");
 	}
 	printNews();
-
 });
 
 
@@ -24,12 +23,11 @@ function renderHighlightedRecipes(recipesArray) {
 	recipesArray.filter(function(e){
 		if(e.highlighted == true){
 			renderRecipe(e);
+			//ETAPA 4: solo titulos y autores
+			$(".list-recipes").append("<img src= 'img/recipes/320x350/"+ $(e).attr("name") +".jpg' class='img-recipes'><h3 class='title-recipes'>" + e.title  + "</h3><p class='author-recipes'>" + e.source.name + "</p>");
 		}
 	})
-
-
 }
-renderHighlightedRecipes();
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
@@ -40,6 +38,7 @@ renderHighlightedRecipes();
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 }
+
 
 
 
@@ -58,5 +57,6 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
+
 
 
