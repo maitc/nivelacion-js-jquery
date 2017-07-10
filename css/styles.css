@@ -2204,3 +2204,13 @@ nav .nav-group.right {
 #admin .btn-primary {
   width: 100%;
 }
+.title-recipes{
+  text-align: center;
+}
+.author-recipes{
+  text-align: center;
+}
+.img-recipes{
+  display:block;
+  margin:auto;
+}
