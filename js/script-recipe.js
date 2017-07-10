@@ -19,3 +19,8 @@ $(".js-show-recipe").click(function(){
 	$(".js-show-recipe").addClass("active");
 	$(".js-show-make").removeClass('active');
 })
+
+//ETAPA 10: se le agrega funcion que redirecciona al otro index.
+$(".js-back").click(function(){
+	$(".js-back").attr("href", "index.html");
+})
