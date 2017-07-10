@@ -5,6 +5,12 @@ $(document).ready( function(){
 	//ocultando flecha 
 	$(".js-back").hide();
 
+	//Ingresando nuevo texto
+	function printNews(){
+		$(".new-callout").append("NUEVAS TAREAS");
+	}
+	printNews();
+
 });
 
 
