@@ -7,8 +7,15 @@ $(document).ready(function(){
 //ETAPA 8: agrega y saca clase
 $(".js-show-make").click(function(){
 	$(".page").addClass("make");
+	//ETAPA 9: agrega y saca clase
+	$(".js-show-make").addClass("active");
+	$(".js-show-recipe").removeClass('active');
 
 })
+//ETAPA 8: agrega y saca clase
 $(".js-show-recipe").click(function(){
 	$(".recipe").removeClass("make");
+	//ETAPA 9: agrega y saca clase.
+	$(".js-show-recipe").addClass("active");
+	$(".js-show-make").removeClass('active');
 })
